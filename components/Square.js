@@ -18,7 +18,11 @@ const Square = ({ letter, isCenterLetter }) => {
         }}
       >
         <Text
-          style={{ color: "white", textAlign: "center", fontWeight: "bold" }}
+          style={{
+            color: "white",
+            textAlign: "center",
+            fontFamily: "Roboto-Bold"
+          }}
         >
           {l.toUpperCase()}
         </Text>
@@ -37,7 +41,7 @@ const Square = ({ letter, isCenterLetter }) => {
         justifyContent: "center"
       }}
     >
-      <Text style={{ textAlign: "center", fontWeight: "bold" }}>
+      <Text style={{ textAlign: "center", fontFamily: "Roboto-Bold" }}>
         {l.toUpperCase()}
       </Text>
     </View>

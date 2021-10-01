@@ -27,12 +27,14 @@ const Overview = () => {
     <>
       <View style={{ flex: 2 }}></View>
       <View>
-        <Text h2 style={{ fontSize: 14, fontWeight: "bold" }}>
+        <Text h2 style={{ fontSize: 24, fontFamily: "Roboto-Bold" }}>
           T9rget
         </Text>
       </View>
       <View style={{ flexDirection: "row", margin: 10 }}>
-        <Text>Word List: {wordSet ? "Easy" : "Hard"}</Text>
+        <Text style={{ fontFamily: "Roboto-Light" }}>
+          Word List: {wordSet ? "Easy" : "Hard"}
+        </Text>
         <Switch
           trackColor={{ false: "#767577", true: "#81b0ff" }}
           thumbColor={wordSet ? "#f5dd4b" : "#f4f3f4"}
@@ -49,6 +51,7 @@ const Overview = () => {
           className="btn btn-primary"
           title="New Game"
           onPress={newGame}
+          style={{ fontFamily: "Roboto-Light" }}
         ></Button>
       </View>
       <View style={{ flex: 12 }}>

@@ -142,12 +142,12 @@ const Game = ({ word, wordSet }) => {
 
         {error ? (
           <View style={styles.error}>
-            <Text>{error}</Text>
+            <Text style={{ fontFamily: "Roboto-Light" }}>{error}</Text>
           </View>
         ) : null}
         {successMsg ? (
           <View style={styles.success}>
-            <Text>{successMsg}</Text>
+            <Text style={{ fontFamily: "Roboto-Light" }}>{successMsg}</Text>
           </View>
         ) : null}
 
@@ -165,7 +165,10 @@ const Game = ({ word, wordSet }) => {
               borderWidth: 1
             }}
           >
-            <Text> 🥉 {minScore} words </Text>
+            <Text style={{ fontFamily: "Roboto-Light" }}>
+              {" "}
+              🥉 {minScore} words{" "}
+            </Text>
           </View>
 
           <View
@@ -176,7 +179,10 @@ const Game = ({ word, wordSet }) => {
               borderWidth: 1
             }}
           >
-            <Text> 🥈 {avgScore} words </Text>
+            <Text style={{ fontFamily: "Roboto-Light" }}>
+              {" "}
+              🥈 {avgScore} words{" "}
+            </Text>
           </View>
 
           <View
@@ -187,7 +193,10 @@ const Game = ({ word, wordSet }) => {
               borderWidth: 1
             }}
           >
-            <Text> 🥇 {highScore} words </Text>
+            <Text style={{ fontFamily: "Roboto-Light" }}>
+              {" "}
+              🥇 {highScore} words{" "}
+            </Text>
           </View>
         </View>
 
@@ -207,7 +216,15 @@ const Game = ({ word, wordSet }) => {
                 color="#C1E1C1"
                 height={60}
               >
-                <Text style={{ position: "absolute", flex: 0 }}>Progress</Text>
+                <Text
+                  style={{
+                    position: "absolute",
+                    flex: 0,
+                    fontFamily: "Roboto-Light"
+                  }}
+                >
+                  Progress
+                </Text>
               </Progress.Bar>
             </>
           ) : null}

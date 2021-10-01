@@ -59,7 +59,8 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     borderWidth: 1,
     padding: 10,
-    borderColor: "#d3d6d8"
+    borderColor: "#d3d6d8",
+    fontFamily: "Roboto-Light"
   }
 });
 
